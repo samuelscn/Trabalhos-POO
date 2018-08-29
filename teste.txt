@@ -1,0 +1,4 @@
+simim masculino 55 19 1,45
+samuel masculino 90 23 1,90
+taianne feminino 60 23 1,30
+camila feminino 70 21 1,70
