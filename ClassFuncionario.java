@@ -1,25 +1,3 @@
-
-import java.util.Scanner;
-
-public class Q01 {
-	public static void main(String[] args) {
-		int Nlinhas = 0;
-		int cont = 1;
-		Scanner s = new Scanner(System.in);
-		do {
-			System.out.println("Entre com o numero de linhas maior que zero:");
-			Nlinhas = s.nextInt();
-		} while(Nlinhas <= 0);
-		for (int i = 0; i < Nlinhas; i++) {
-			for (int j = 0; j < cont; j ++) {
-				System.out.print("*");
-			}
-			System.out.println();
-			cont++;
-		}
-	}
-}
-
 import java.util.Scanner;
 
 public class Funcionario {
@@ -79,7 +57,7 @@ public class Funcionario {
         this.Data_nascimento = dataN;
     }
     
-    public void Construtor(String nome, String data){
+    public void Funcionario(String nome, String data){
         this.setNome(nome);
         this.setData(data);
     }
@@ -153,6 +131,12 @@ public class Funcionario {
     }
 	    
 	public static void main(String[] args){
+		Funcionario funcionario01 = new Funcionario("Caiao Mito", "13 09 1997");
+		funcionario01.Contratar(9999.99, 11, "01 01 2020");
+		Folha_Pagamento(12, 9999.99);
 		
+		Funcionario funcionario01 = new Funcionario("Vinicius God", "31 13 1950");
+		funcionario01.Contratar(100000.9, 35, "31 13 1950");
+		Folha_Pagamento(6, 100000.9);
 	}
 }
