@@ -145,9 +145,14 @@ public class Funcionario {
 	}
     }
 	    
-    public void Folha_Pagamento(int horas){
+    public void Folha_Pagamento(int horas, double salario){
 	System.out.println("Salario Bruto: "+Calcular_Salario_Bruto(horas));
-	System.out.println("Desconto: "+Calcular_Salario_Bruto(horas));    
+	System.out.println("Desconto Imposto Renda: "+Calcular_Imposto_Renda(salario));
+	System.out.println("Desconto INSS: "+Calcular_Desconto_INSS(salario));
+	System.out.println("Salario Liquido: "+Calcular_Salario_Liquido(salario, horas));
     }
-	
+	    
+	public static void main(String[] args){
+		
+	}
 }
